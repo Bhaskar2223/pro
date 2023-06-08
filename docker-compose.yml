@@ -1,28 +1,28 @@
 version: '3'
 services:
-  devops:
-    image: rahamshaik/devopsreponit:latest
+  hyderabad:
+    image: bhaskarone/hyderabad:latest
     ports:
       - "90:80"
     deploy:
       replicas: 3
 
-  aws:
-    image: rahamshaik/awsreponit:latest
+  bangaluru:
+    image: bhaskarone/bangaluru:latest
     ports:
       - "91:80"
     deploy:
       replicas: 3
 
-  datascience:
-    image: rahamshaik/datasciencereponit:latest
+  davanagere:
+    image: bhaskarone/davanagere:latest
     ports:
       - "92:80"
     deploy:
       replicas: 3
 
-  azure:
-    image: rahamshaik/azurereponit:latest
+  chennai:
+    image: bhaskarone/chennai:latest
     ports:
       - "93:80"
     deploy:
