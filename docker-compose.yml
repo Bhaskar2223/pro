@@ -1,37 +1,37 @@
 version: '3'
 services:
-  hyderabad:
-    image: bhaskarone/hyderabad:latest
+  cat:
+    image: bhaskarone/cat:latest
     ports:
       - "80:80"
     volumes:
-      - "hyderabadvol"
+      - "catvol"
     deploy:
       replicas: 3
 
-  davanagere:
-    image: bhaskarone/davanagere:latest
+  rat:
+    image: bhaskarone/rat:latest
     ports:
       - "81:80"
     volumes:
-      - "davanagerevol"
+      - "ratvol"
     deploy:
       replicas: 3
 
-  chennai:
-    image: bhaskarone/chennai:latest
+  bat:
+    image: bhaskarone/bat:latest
     ports:
       - "82:80"
     volumes:
-      - "chennaivol"
+      - "batvol"
     deploy:
       replicas: 3
 
-  bangaluru:
-    image: bhaskarone/bangaluru:latest
+  mat:
+    image: bhaskarone/mat:latest
     ports:
       - "83:80"
     volumes:
-      - "gangaluruvol"
+      - "matvol"
     deploy:
       replicas: 3
