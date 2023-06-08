@@ -3,27 +3,27 @@ services:
   hyderabad:
     image: bhaskarone/hyderabad:latest
     ports:
-      - "90:80"
+      - "83:80"
     deploy:
       replicas: 3
 
   bangaluru:
     image: bhaskarone/bangaluru:latest
     ports:
-      - "91:80"
+      - "84:80"
     deploy:
       replicas: 3
 
   davanagere:
     image: bhaskarone/davanagere:latest
     ports:
-      - "92:80"
+      - "85:80"
     deploy:
       replicas: 3
 
   chennai:
     image: bhaskarone/chennai:latest
     ports:
-      - "93:80"
+      - "86:80"
     deploy:
       replicas: 3
