@@ -1,37 +1,37 @@
 version: '3'
 services:
-  cat:
-    image: bhaskarone/cat:latest
+  rich:
+    image: bhaskarone/rich:latest
     ports:
       - "80:80"
     volumes:
-      - "catvol"
+      - "richvol"
     deploy:
       replicas: 3
 
-  rat:
-    image: bhaskarone/rat:latest
+  pitch:
+    image: bhaskarone/pitch:latest
     ports:
       - "81:80"
     volumes:
-      - "ratvol"
+      - "pitchvol"
     deploy:
       replicas: 3
 
-  bat:
-    image: bhaskarone/bat:latest
+  poor:
+    image: bhaskarone/poor:latest
     ports:
       - "82:80"
     volumes:
-      - "batvol"
+      - "poorvol"
     deploy:
       replicas: 3
 
-  mat:
-    image: bhaskarone/mat:latest
+  middle:
+    image: bhaskarone/middle:latest
     ports:
       - "83:80"
     volumes:
-      - "matvol"
+      - "middlevol"
     deploy:
       replicas: 3
