@@ -3,18 +3,14 @@ services:
   zomato:
     image: bhaskarone/zomato:latest
     ports:
-      - "80:80"
-    volumes:
-      - "zomatovol"
+      - "71:80"
     deploy:
       replicas: 3
 
   swiggy:
     image: bhaskarone/swiggy:latest
     ports:
-      - "81:80"
-    volumes:
-      - "swiggyvol"
+      - "72:80"
     deploy:
       replicas: 3
 
